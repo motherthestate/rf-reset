@@ -27,7 +27,7 @@ export {};
 
 declare module "$app/types" {
 	export interface AppTypes {
-		RouteId(): "/(login)" | "/(app)" | "/" | "/(login)/login";
+		RouteId(): "/(login)" | "/(app)" | "/" | "/login";
 		RouteParams(): {
 			
 		};
@@ -35,7 +35,7 @@ declare module "$app/types" {
 			"/(login)": Record<string, never>;
 			"/(app)": Record<string, never>;
 			"/": Record<string, never>;
-			"/(login)/login": Record<string, never>
+			"/login": Record<string, never>
 		};
 		Pathname(): "/" | "/login" | "/login/";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;

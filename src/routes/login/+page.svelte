@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onNavigate } from '$app/navigation';
 	import Label from '$lib/components/label.svelte';
-	import type { PageProps } from './$types';
+	import type { PageProps } from '../login/$types';
 	import { login } from './data.remote';
 
 	let { data }: PageProps = $props();
