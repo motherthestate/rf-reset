@@ -27,12 +27,11 @@ export {};
 
 declare module "$app/types" {
 	export interface AppTypes {
-		RouteId(): "/(login)" | "/(app)" | "/" | "/login";
+		RouteId(): "/(app)" | "/" | "/login";
 		RouteParams(): {
 			
 		};
 		LayoutParams(): {
-			"/(login)": Record<string, never>;
 			"/(app)": Record<string, never>;
 			"/": Record<string, never>;
 			"/login": Record<string, never>
